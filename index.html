@@ -1,0 +1,101 @@
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>To Do</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./src/css/style.css">
+
+</head>
+
+<body>
+        <header>Welcome to TODO App</header>
+        <section class="flex upper_container">
+                <div class="form_container">
+                                <div class="float_container float_container_input">
+                                        <input class="float_input input_title" type="text" required>
+                                        <span class="floating_placeholder">Enter To Do</span>
+                                </div>
+                                <div class="float_container float_container_date">
+                                        <input class="float_input input_date" type="date" required>
+                                        <span class="floating_placeholder">Enter Date</span>
+                                </div>
+                                <button class="todo_create btn">Create</button>
+                                <button class="todo_cancel btn">Cancel</button>
+                </div>
+        </section>
+        <section class="bottom_container">
+                <div class="flex search_container">
+                        <input class="query_search" placeholder="search title">
+                        <div class="flex sort_by">
+                                <p class="sort_title">Sort By :</p>
+                                <p>
+                                        Title
+                                        <i class="fa fa-long-arrow-up icon sort_icon" data-sortby="title-asc" aria-hidden="true"></i>
+                                        <i class="fa fa-long-arrow-down icon sort_icon" data-sortby="title-desc" aria-hidden="true"></i>
+                                </p>
+                                <p>
+                                        Date
+                                        <i class="fa fa-long-arrow-up icon sort_icon" data-sortby="date-asc" aria-hidden="true"></i>
+                                        <i class="fa fa-long-arrow-down icon sort_icon" data-sortby="date-desc" aria-hidden="true"></i>
+                                </p>
+                        </div>
+                </div>
+                <div class="item_container">
+                        <div class="todo_container">
+                                <div class="todo_title">To DO</div>
+                                <div class="todo_items">
+                                        <!-- <div class="add_item">
+                                                <span class="item_date">29th June</span>
+                                                <span class="item_desc">cdadbjhfjwefjhfwajfbw</span>
+                                                <div class="item_valbtn">
+                                                        <i class="fa fa-pencil-square-o icon" aria-hidden="true"></i>
+                                                        <i class="fa fa-trash-o icon" aria-hidden="true"></i>
+                                                        <i class="fa fa-check icon" aria-hidden="true"></i>
+                                                </div>
+                                        </div>
+                                        <div class="add_item">
+                                                <span class="item_date">29th June</span>
+                                                <span class="item_desc">cdadbjhfjwefjhfwajfbw</span>
+                                                <div class="item_valbtn">
+                                                        <i class="fa fa-heart fa-1x icon" aria-hidden="true"></i>
+                                                        <i class="fa fa-heart fa-1x icon" aria-hidden="true"></i>
+                                                        <i class="fa fa-heart fa-1x icon" aria-hidden="true"></i>
+                                                </div>
+                                        </div> -->
+                                </div>
+                                <!-- <div class="add_item" id="exp-%ID%"><span class="item_desc">%Desc%</span><div class="item_valbtn"><span class="item_value">%value%</span><span class="item_expense--perc">%itemPerc%</span><button class="btn deleteBtn"><i class="ion-ios-close-outline"></i></button></div></div> -->
+
+                        </div>
+                        <div class="tododone_container">
+                                <div class="todo_title">Done</div>
+                                <div class="tododone_items">
+                                        <!-- <div class="add_item">
+                                                <span class="item_date">29th June</span>
+                                                <span class="item_desc">cdadbjhfjwefjhfwajfbw</span>
+                                                <div class="item_valbtn">
+                                                        <i class="fa fa-heart fa-1x icon" aria-hidden="true"></i>
+                                                        <i class="fa fa-heart fa-1x icon" aria-hidden="true"></i>
+                                                        <i class="fa fa-heart fa-1x icon" aria-hidden="true"></i>
+                                                </div>
+                                        </div>
+                                        <div class="add_item">
+                                                <span class="item_date">29th June</span>
+                                                <span class="item_desc">cdadbjhfjwefjhfwajfbw</span>
+                                                <div class="item_valbtn">
+                                                        <i class="fa fa-heart fa-1x icon" aria-hidden="true"></i>
+                                                        <i class="fa fa-heart fa-1x icon" aria-hidden="true"></i>
+                                                        <i class="fa fa-heart fa-1x icon" aria-hidden="true"></i>
+                                                </div>
+                                        </div> -->
+                                </div>
+                        </div>
+                </div>
+        </section>
+
+        <script type="module" src="./src/views/index.js"></script>
+</body>
+
+</html>
